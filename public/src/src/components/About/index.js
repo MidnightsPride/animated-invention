@@ -12,14 +12,17 @@ import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 
+
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+
 
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
+
 
   return (
     <>
@@ -33,7 +36,7 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a student, who is still learing how to code. I prefer learning more front-end as it seems much easier than back-end. 
+            I'm a student, who is still learing how to code. I prefer learning more front-end as it seems much easier than back-end.
           </p>
           <p align="LEFT">
             I'm quiet, confident, naturally curious, and eager to learn more about code as well as learning different formats.
@@ -42,6 +45,7 @@ const About = () => {
             If I need to define myself in one sentence that would be that I'm a hardworker.
           </p>
         </div>
+
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
@@ -70,5 +74,3 @@ const About = () => {
     </>
   )
 }
-
-export default About
